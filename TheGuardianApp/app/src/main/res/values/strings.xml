@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">TheGuardianApp</string>
-    <string name="category">Category</string>
-    <string name="save_article">Save Article</string>
-    <string name="pin_article">Pin Article</string>
-</resources>
