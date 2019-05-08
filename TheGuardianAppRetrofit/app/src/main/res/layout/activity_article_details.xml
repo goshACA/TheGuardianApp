@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ArticleDetailsActivity"
+    android:background="#000000"
+  >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_article_details_title"
+        style="@style/ArticleTilte"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@id/image_category"
+       />
+
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/image_category"
+         app:layout_constraintTop_toBottomOf="@id/text_article_details_title">
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             android:id="@+id/article_image"
+             android:layout_centerInParent="true"
+             android:transitionName="article"
+             />
+         <TextView
+             android:id="@+id/text_article_details_category"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#000000"
+             android:layout_alignBottom="@id/article_image"
+             android:layout_alignEnd="@id/article_image"
+             android:padding="15dp"
+             android:gravity="center"
+             android:text="SomeText"
+             android:textColor="#ffffffff" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
